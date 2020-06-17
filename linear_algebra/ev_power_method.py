@@ -13,6 +13,7 @@ def compute_stop(X, X_prev):
 
 '''
 Find eigen value
+A = sqaure matrix
 '''
 def power(A, tolerance=0.0000001):
     N = A.shape[1]
@@ -33,7 +34,8 @@ def power(A, tolerance=0.0000001):
     return eigen_value, num_iter
 
 
-A = np.array([[2, -12], [1, -5]])
+#A = np.array([[2, -12], [1, -5]])
+A = np.array([[1, 2, 0], [-2, 1, 2], [1, 3, 1]])
 print("Input A:\n", A, "\n")
 
 s = time.time()
